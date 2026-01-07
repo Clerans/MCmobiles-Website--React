@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1767791345636",
+    "email": "clerans14@gmail.com",
+    "password": "$2b$10$B72pZMdVEboYfGHY4kBsIu0iY08XAwzWCSfIlB8HSXRjX9wLKhtVi",
+    "name": "clerans",
+    "role": "admin"
+  },
+  {
+    "id": "1767792712379",
+    "email": "vangavandhor@gmail.com",
+    "password": "$2b$10$QV./m7SybLUas.ZnJlePdODvzfMNOPWQMNXXbS7ZexDfm04EmLAWa",
+    "name": "sanju",
+    "role": "user",
+    "avatar": "",
+    "phone": ""
+  },
+  {
+    "id": "1767793894004",
+    "email": "account@test.com",
+    "password": "$2b$10$.hcGtwWmQW/31gYrQKm8peuSgzG37QShZFbNukSzAV3vO77JaGmVK",
+    "name": "Account Test",
+    "role": "user",
+    "phone": "",
+    "avatar": "",
+    "addresses": [],
+    "paymentMethods": []
+  }
+]
