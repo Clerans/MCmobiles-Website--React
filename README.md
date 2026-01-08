@@ -1,17 +1,18 @@
-# MC Mobiles E-Commerce Platform
+# 📱 MC Mobiles E-Commerce Platform
 
-A modern, full-stack e-commerce application for selling mobile phones and accessories. Built with React (Vite) on the frontend and Node.js/Express with MongoDB on the backend.
+A modern, full-stack e-commerce application for selling mobile phones and accessories.  
+Built with **React (Vite)** on the frontend and **Node.js / Express** with **MongoDB** on the backend.
 
 ---
 
 ## 🚧 Development Status
 
 This project is **currently under active development**.  
-Core e-commerce features are implemented and functional, while additional features, UI improvements, performance optimizations, and security enhancements are continuously being developed.
+Core e-commerce features are implemented and functional, while additional features, UI improvements, performance optimizations, and security enhancements are continuously in progress.
 
 ### Planned Enhancements
 - Payment gateway integration
-- Order tracking and order status updates
+- Order tracking and status updates
 - Product reviews and ratings
 - Improved admin analytics dashboard
 - Performance and SEO optimizations
@@ -20,104 +21,135 @@ Core e-commerce features are implemented and functional, while additional featur
 
 ## 🚀 Features
 
-- **User Authentication**: Secure login and registration with JWT and Bcrypt.
-- **Product Management**: Browse, search, and view product details.
-- **Shopping Cart & Orders**: Add items to cart and place orders.
-- **Admin Dashboard**: Manage products and view orders (Role-based access).
-- ** responsive Design**: Built with TailwindCSS for a seamless mobile and desktop experience.
-- **Secure API**: protected by API Key middleware and JWT authorization.
+- **User Authentication** – Secure login and registration using JWT and Bcrypt
+- **Product Management** – Browse, search, and view product details
+- **Shopping Cart & Orders** – Add items to cart and place orders
+- **Admin Dashboard** – Manage products and view orders (role-based access)
+- **Responsive Design** – Built with TailwindCSS for mobile and desktop devices
+- **Secure API** – Protected with API key middleware and JWT authorization
+
+---
 
 ## 🛠️ Tech Stack
 
 ### Client
-- **Framework**: [React](https://reactjs.org/) (via [Vite](https://vitejs.dev/))
-- **Styling**: [TailwindCSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)
-- **State/Routing**: React Router DOM, React Hooks (Context API)
-- **HTTP Client**: Axios
+- React (Vite)
+- TailwindCSS
+- Framer Motion
+- React Router DOM, Context API
+- Axios
 
 ### Server
-- **Runtime**: [Node.js](https://nodejs.org/)
-- **Framework**: [Express](https://expressjs.com/)
-- **Database**: [MongoDB](https://www.mongodb.com/) (Mongoose ODM)
-- **Authentication**: JSON Web Tokens (JWT) & Bcryptjs
+- Node.js
+- Express.js
+- MongoDB (Mongoose ODM)
+- JSON Web Tokens (JWT), Bcryptjs
+
+---
 
 ## 📦 Getting Started
 
 ### Prerequisites
-- Node.js (v16+ recommended)
-- MongoDB (Local or Atlas URI)
+- Node.js (v16 or higher recommended)
+- MongoDB (local instance or MongoDB Atlas)
 
-### Installation
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd react
-   ```
+## 🔧 Installation
 
-2. **Install Server Dependencies:**
-   ```bash
-   cd server
-   npm install
-   ```
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd react
+```
 
-3. **Install Client Dependencies:**
-   ```bash
-   cd ../client
-   npm install
-   ```
+### 2. Install Server Dependencies
+```bash
+cd server
+npm install
+```
 
-### Configuration
+### 3. Install Client Dependencies
+```bash
+cd ../client
+npm install
+```
 
-Create `.env` files in both `client` and `server` directories based on the examples below.
+---
 
-**Server (`server/.env`):**
+## ⚙️ Configuration
+
+Create `.env` files in both the **client** and **server** directories.
+
+### Server (`server/.env`)
 ```properties
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/mcmobiles # Enter your MongoDB URI Or your Atlas URI
-JWT_SECRET=Enter_your_jwt_secret_key
-API_KEY=Enter_your_secure_api_key
+MONGO_URI=mongodb://localhost:27017/mcmobiles
+JWT_SECRET=your_jwt_secret_key
+API_KEY=your_secure_api_key
 ```
 
-**Client (`client/.env`):**
+### Client (`client/.env`)
 ```properties
-VITE_API_KEY=Enter_your_secure_api_key # Must match the server API_KEY
+VITE_API_KEY=your_secure_api_key
 ```
 
-### Running the Application
+> ⚠️ `VITE_API_KEY` must match the `API_KEY` used in the server.
 
-You need to run both the backend and frontend servers.
+---
 
-**1. Start the Backend Server:**
+## ▶️ Running the Application
+
+### Start Backend Server
 ```bash
 cd server
 npm run dev
 ```
-_Server runs on http://localhost:5000_
+Server runs on: **http://localhost:5000**
 
-**2. Start the Client:**
+### Start Frontend Client
 ```bash
 cd client
 npm run dev
 ```
-_Client runs on http://localhost:5173 (typically)_
+Client runs on: **http://localhost:5173**
+
+---
 
 ## 📂 Project Structure
 
 ```
 react/
-├── client/          # Frontend React Application
+├── client/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── context/
 │   │   ├── pages/
 │   │   └── utils/
 │   └── ...
-├── server/          # Backend Express Application
-│   ├── config/      # DB connection
-│   ├── middleware/  # Auth middleware
-│   ├── models/      # Mongoose models
-│   ├── routes/      # API routes
+├── server/
+│   ├── config/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
 │   └── ...
 └── README.md
 ```
+
+---
+
+## 🔐 Security Notes
+
+- Environment variables are used for sensitive configuration
+- Passwords are hashed using Bcrypt
+- APIs are protected using JWT and API key validation
+- Role-based authorization is enforced for admin routes
+
+---
+
+## 📌 Disclaimer
+
+This project is built for **learning, practice, and portfolio purposes**.  
+Additional testing, security hardening, and production optimizations will be applied as development continues.
+
+---
