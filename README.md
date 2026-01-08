@@ -2,6 +2,22 @@
 
 A modern, full-stack e-commerce application for selling mobile phones and accessories. Built with React (Vite) on the frontend and Node.js/Express with MongoDB on the backend.
 
+---
+
+## 🚧 Development Status
+
+This project is **currently under active development**.  
+Core e-commerce features are implemented and functional, while additional features, UI improvements, performance optimizations, and security enhancements are continuously being developed.
+
+### Planned Enhancements
+- Payment gateway integration
+- Order tracking and order status updates
+- Product reviews and ratings
+- Improved admin analytics dashboard
+- Performance and SEO optimizations
+
+---
+
 ## 🚀 Features
 
 - **User Authentication**: Secure login and registration with JWT and Bcrypt.
